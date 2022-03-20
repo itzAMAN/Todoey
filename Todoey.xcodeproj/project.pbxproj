@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC2B53F727E6CE6000749CC1 /* SwipeCellKit in Frameworks */ = {isa = PBXBuildFile; productRef = AC2B53F627E6CE6000749CC1 /* SwipeCellKit */; };
 		AC2BEA0D27DA49F000767DDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BEA0C27DA49F000767DDE /* AppDelegate.swift */; };
 		AC2BEA0F27DA49F000767DDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BEA0E27DA49F000767DDE /* SceneDelegate.swift */; };
 		AC2BEA1127DA49F000767DDE /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BEA1027DA49F000767DDE /* TodoListViewController.swift */; };
@@ -15,6 +16,7 @@
 		AC644D0127DBA4DD00517679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC644D0027DBA4DD00517679 /* Assets.xcassets */; };
 		ACBED4AC27E5EE6C00F36E06 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBED4AB27E5EE6C00F36E06 /* Item.swift */; };
 		ACBED4AE27E5EE7D00F36E06 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBED4AD27E5EE7D00F36E06 /* Category.swift */; };
+		ACBED4B327E648C200F36E06 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBED4B227E648C200F36E06 /* SwipeTableViewController.swift */; };
 		ACEB866A27E08D32009D8CB5 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB866927E08D32009D8CB5 /* CategoryViewController.swift */; };
 		C3D8903490862E191B47D716 /* Pods_Todoey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2862EDBD6D4110D7244885 /* Pods_Todoey.framework */; };
 /* End PBXBuildFile section */
@@ -32,6 +34,7 @@
 		AC644D0027DBA4DD00517679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACBED4AB27E5EE6C00F36E06 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		ACBED4AD27E5EE7D00F36E06 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		ACBED4B227E648C200F36E06 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		ACEB866927E08D32009D8CB5 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		E50C7D81E5EEFEE9EA5C742D /* Pods-Todoey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoey.release.xcconfig"; path = "Target Support Files/Pods-Todoey/Pods-Todoey.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC2B53F727E6CE6000749CC1 /* SwipeCellKit in Frameworks */,
 				C3D8903490862E191B47D716 /* Pods_Todoey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +104,7 @@
 		ACA0E0AF27DB654300296005 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ACBED4B227E648C200F36E06 /* SwipeTableViewController.swift */,
 				ACEB866927E08D32009D8CB5 /* CategoryViewController.swift */,
 				AC2BEA1027DA49F000767DDE /* TodoListViewController.swift */,
 			);
@@ -150,6 +155,9 @@
 			dependencies = (
 			);
 			name = Todoey;
+			packageProductDependencies = (
+				AC2B53F627E6CE6000749CC1 /* SwipeCellKit */,
+			);
 			productName = Todoey;
 			productReference = AC2BEA0927DA49F000767DDE /* Todoey.app */;
 			productType = "com.apple.product-type.application";
@@ -178,6 +186,9 @@
 				Base,
 			);
 			mainGroup = AC2BEA0027DA49F000767DDE;
+			packageReferences = (
+				AC2B53F527E6CE6000749CC1 /* XCRemoteSwiftPackageReference "SwipeCellKit" */,
+			);
 			productRefGroup = AC2BEA0A27DA49F000767DDE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -250,6 +261,7 @@
 				ACEB866A27E08D32009D8CB5 /* CategoryViewController.swift in Sources */,
 				AC2BEA1127DA49F000767DDE /* TodoListViewController.swift in Sources */,
 				AC2BEA0D27DA49F000767DDE /* AppDelegate.swift in Sources */,
+				ACBED4B327E648C200F36E06 /* SwipeTableViewController.swift in Sources */,
 				ACBED4AC27E5EE6C00F36E06 /* Item.swift in Sources */,
 				AC2BEA0F27DA49F000767DDE /* SceneDelegate.swift in Sources */,
 				ACBED4AE27E5EE7D00F36E06 /* Category.swift in Sources */,
@@ -474,6 +486,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC2B53F527E6CE6000749CC1 /* XCRemoteSwiftPackageReference "SwipeCellKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwipeCellKit/SwipeCellKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC2B53F627E6CE6000749CC1 /* SwipeCellKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC2B53F527E6CE6000749CC1 /* XCRemoteSwiftPackageReference "SwipeCellKit" */;
+			productName = SwipeCellKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC2BEA0127DA49F000767DDE /* Project object */;
 }
